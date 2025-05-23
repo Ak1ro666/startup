@@ -1,0 +1,18 @@
+{
+  "name": "ideanick",
+  "private": "true",
+  "version": "0.0.0",
+  "scripts": {
+    "b": "pnpm --filter @ideanick/backend",
+    "f": "pnpm --filter @ideanick/client",
+    "dev": "pnpm -r --parallel dev",
+    "check:types": "pnpm -r --parallel check:types",
+    "format": "pnpm -r --parallel format",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.0.0",
+    "typescript": "^5.8.3"
+  }
+}

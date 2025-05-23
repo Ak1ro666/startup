@@ -1,0 +1,30 @@
+{
+  "name": "@ideanick/backend",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc --build ./tsconfig.json",
+    "dev": "ts-node-dev --rs ./src/index.ts",
+    "start": "node ./dist/index.js",
+    "check:types": "tsc --noEmit --project ./tsconfig.json",
+    "format": "prettier --cache --write . '{src/**/*,*}.{ts,js,json,yml}' '!**/{node_modules,dist}/**/*'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@trpc/server": "^11.1.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.18",
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.15.3",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  }
+}
